@@ -3,7 +3,7 @@ import qrcode
 qr = qrcode.QRCode(version=1,
                    error_correction=qrcode.constants.ERROR_CORRECT_L,
                    box_size=20,
-                   border=2)
+                   border=0)
 
 qr.add_data("https://evankagarise.com")
 qr.make(fit=True)
